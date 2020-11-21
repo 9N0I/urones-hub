@@ -87,8 +87,14 @@ local Text2 = Instance.new("TextLabel")
 local UronesIcon = Instance.new("ImageLabel")
 local ScriptFrame = Instance.new("ScrollingFrame")
 local CharacterStuff_2 = Instance.new("TextLabel")
-local ImageLabel = Instance.new("ImageLabel")
+local Jailbreak = Instance.new("ImageLabel")
 local Roundify = Instance.new("ImageLabel")
+local Game = Instance.new("TextLabel")
+local JailbreakButton = Instance.new("TextButton")
+local TextButton_Roundify_4px_9 = Instance.new("ImageLabel")
+local Icon_5 = Instance.new("ImageButton")
+local Game_2 = Instance.new("TextLabel")
+local Frame = Instance.new("ImageLabel")
 
 --Properties:
 
@@ -1122,16 +1128,17 @@ CharacterStuff_2.Text = "SCRIPT GAME"
 CharacterStuff_2.TextColor3 = Color3.fromRGB(135, 135, 135)
 CharacterStuff_2.TextSize = 14.000
 
-ImageLabel.Parent = ScriptFrame
-ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel.BorderSizePixel = 0
-ImageLabel.Position = UDim2.new(0.0337078683, 0, 0.0305785127, 0)
-ImageLabel.Size = UDim2.new(0, 70, 0, 70)
-ImageLabel.ZIndex = 3
-ImageLabel.Image = "rbxassetid://5974822439"
+Jailbreak.Name = "Jailbreak"
+Jailbreak.Parent = ScriptFrame
+Jailbreak.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Jailbreak.BorderSizePixel = 0
+Jailbreak.Position = UDim2.new(0.0337078683, 0, 0.0305785127, 0)
+Jailbreak.Size = UDim2.new(0, 70, 0, 70)
+Jailbreak.ZIndex = 3
+Jailbreak.Image = "rbxassetid://5983366272"
 
 Roundify.Name = "Roundify"
-Roundify.Parent = ImageLabel
+Roundify.Parent = Jailbreak
 Roundify.AnchorPoint = Vector2.new(0.5, 0.5)
 Roundify.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Roundify.BackgroundTransparency = 1.000
@@ -1139,9 +1146,87 @@ Roundify.Position = UDim2.new(0.5, 0, 0.5, 0)
 Roundify.Size = UDim2.new(1, 8, 1, 8)
 Roundify.ZIndex = 2
 Roundify.Image = "rbxassetid://3570695787"
+Roundify.ImageColor3 = Color3.fromRGB(0, 0, 0)
 Roundify.ScaleType = Enum.ScaleType.Slice
 Roundify.SliceCenter = Rect.new(100, 100, 100, 100)
 Roundify.SliceScale = 0.040
+
+Game.Name = "Game"
+Game.Parent = Jailbreak
+Game.Active = true
+Game.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Game.BackgroundTransparency = 1.000
+Game.Position = UDim2.new(1.07142866, 0, -0.0571428575, 0)
+Game.Size = UDim2.new(0, 84, 0, 22)
+Game.Font = Enum.Font.SourceSansBold
+Game.Text = "JAILBREAK"
+Game.TextColor3 = Color3.fromRGB(255, 255, 255)
+Game.TextSize = 14.000
+
+JailbreakButton.Name = "JailbreakButton"
+JailbreakButton.Parent = Jailbreak
+JailbreakButton.BackgroundColor3 = Color3.fromRGB(170, 255, 255)
+JailbreakButton.BackgroundTransparency = 1.000
+JailbreakButton.BorderColor3 = Color3.fromRGB(255, 170, 127)
+JailbreakButton.BorderSizePixel = 0
+JailbreakButton.Position = UDim2.new(1.15412688, 0, 0.633715391, 0)
+JailbreakButton.Size = UDim2.new(0, 234, 0, 23)
+JailbreakButton.ZIndex = 2
+JailbreakButton.Font = Enum.Font.SourceSansBold
+JailbreakButton.Text = "RUN SCRIPT!"
+JailbreakButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+JailbreakButton.TextSize = 14.000
+
+TextButton_Roundify_4px_9.Name = "TextButton_Roundify_4px"
+TextButton_Roundify_4px_9.Parent = JailbreakButton
+TextButton_Roundify_4px_9.Active = true
+TextButton_Roundify_4px_9.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_4px_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_4px_9.BackgroundTransparency = 1.000
+TextButton_Roundify_4px_9.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_4px_9.Selectable = true
+TextButton_Roundify_4px_9.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_4px_9.Image = "rbxassetid://3570695787"
+TextButton_Roundify_4px_9.ImageColor3 = Color3.fromRGB(247, 22, 56)
+TextButton_Roundify_4px_9.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_4px_9.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_4px_9.SliceScale = 0.040
+
+Icon_5.Name = "Icon"
+Icon_5.Parent = JailbreakButton
+Icon_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Icon_5.BackgroundTransparency = 1.000
+Icon_5.Position = UDim2.new(0.894927561, 0, 0.0434782617, 0)
+Icon_5.Size = UDim2.new(0, 20, 0, 20)
+Icon_5.ZIndex = 2
+Icon_5.Image = "rbxassetid://3926305904"
+Icon_5.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Icon_5.ImageRectOffset = Vector2.new(84, 204)
+Icon_5.ImageRectSize = Vector2.new(36, 36)
+
+Game_2.Name = "Game"
+Game_2.Parent = Jailbreak
+Game_2.Active = true
+Game_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Game_2.BackgroundTransparency = 1.000
+Game_2.Position = UDim2.new(1.62857151, 0, 0.257142872, 0)
+Game_2.Size = UDim2.new(0, 84, 0, 22)
+Game_2.Font = Enum.Font.SourceSansSemibold
+Game_2.Text = "SCRIPT :   Vynixius Jailbreak"
+Game_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Game_2.TextSize = 14.000
+
+Frame.Name = "Frame"
+Frame.Parent = ScriptFrame
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.0311910119, 0, 0.102074385, 0)
+Frame.Size = UDim2.new(0, 318, 0, 2)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(35, 35, 35)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.040
 
 -- Scripts:
 	local script = Instance.new('LocalScript', UronesScreen)
@@ -1170,6 +1255,42 @@ Roundify.SliceScale = 0.040
 	local FOVInner = script.Parent.UronesMain.PlayerFrame.SliderFOV.FOVnner
 	local FOVCount = script.Parent.UronesMain.PlayerFrame.SliderFOV.FOVCount
 	local TeleportBox = script.Parent.UronesMain.PlayerFrame.TeleportPlayer.TeleportBox
+	
+	--- Jailbreak RunScript ---
+	local Jailbreak = script.Parent.UronesMain.ScriptFrame.Jailbreak.JailbreakButton
+	local Jailbreak1 = script.Parent.UronesMain.ScriptFrame.Jailbreak.JailbreakButton.TextButton_Roundify_4px
+	
+	local isHovering = false
+	
+	local tweenService = game:GetService("TweenService")
+	local tweenInfo = TweenInfo.new(0.2, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut)
+	
+	local colourDarkTween = tweenService:Create(Jailbreak1, tweenInfo, {ImageColor3 = Color3.fromRGB(247, 22, 56)})
+	local colourBrightTween = tweenService:Create(Jailbreak1, tweenInfo, {ImageColor3 = Color3.fromRGB(170, 14, 40)})
+	local colourDefaultTween = tweenService:Create(Jailbreak1, tweenInfo, {ImageColor3 = Color3.fromRGB(247, 22, 56)})
+	
+	Jailbreak.MouseEnter:Connect(function()
+	
+		colourBrightTween:Play()
+	end)
+	
+	Jailbreak.MouseLeave:Connect(function()
+	
+		colourDefaultTween:Play()
+	
+	end)
+	
+	Jailbreak.MouseButton1Down:Connect(function()
+		Jailbreak1.ImageTransparency = 0.5
+		wait(0.01)
+		Jailbreak1.ImageTransparency = 0.3
+		wait(0.01)
+		Jailbreak1.ImageTransparency = 0
+		
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Vynixius%20Jailbreak", true))()
+	end)
+	
+	--- Jailbreak RunScript ---
 	
 	--- Player Frame ---
 	
@@ -2056,3 +2177,10 @@ Roundify.SliceScale = 0.040
 	end)
 	
 	--- Anchored ---
+	
+	game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+		if inputObject.KeyCode == Enum.KeyCode.Insert then
+			wait(0.01)
+			Urones.Visible = not Urones.Visible
+		end
+	end)
