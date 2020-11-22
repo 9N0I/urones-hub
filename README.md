@@ -102,6 +102,14 @@ local MM2Button = Instance.new("TextButton")
 local TextButton_Roundify_4px_10 = Instance.new("ImageLabel")
 local Icon_6 = Instance.new("ImageButton")
 local Game_4 = Instance.new("TextLabel")
+local Frame_2 = Instance.new("ImageLabel")
+local LB2 = Instance.new("ImageLabel")
+local Roundify_3 = Instance.new("ImageLabel")
+local Game_5 = Instance.new("TextLabel")
+local LB2Button = Instance.new("TextButton")
+local TextButton_Roundify_4px_11 = Instance.new("ImageLabel")
+local Icon_7 = Instance.new("ImageButton")
+local Game_6 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -1323,8 +1331,107 @@ Game_4.Text = "SCRIPT :   Alpha X ( Alpha_1004#6275 )"
 Game_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 Game_4.TextSize = 14.000
 
--- Scripts:
+Frame_2.Name = "Frame"
+Frame_2.Parent = ScriptFrame
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BackgroundTransparency = 1.000
+Frame_2.Position = UDim2.new(0.03119101, 0, 0.182239681, 0)
+Frame_2.Size = UDim2.new(0, 318, 0, 2)
+Frame_2.Image = "rbxassetid://3570695787"
+Frame_2.ImageColor3 = Color3.fromRGB(35, 35, 35)
+Frame_2.ScaleType = Enum.ScaleType.Slice
+Frame_2.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame_2.SliceScale = 0.040
 
+LB2.Name = "LB2"
+LB2.Parent = ScriptFrame
+LB2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LB2.BorderSizePixel = 0
+LB2.Position = UDim2.new(0.0337078683, 0, 0.193388432, 0)
+LB2.Size = UDim2.new(0, 70, 0, 70)
+LB2.ZIndex = 3
+LB2.Image = "rbxassetid://5988316787"
+
+Roundify_3.Name = "Roundify"
+Roundify_3.Parent = LB2
+Roundify_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_3.BackgroundTransparency = 1.000
+Roundify_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+Roundify_3.Size = UDim2.new(1, 8, 1, 8)
+Roundify_3.ZIndex = 2
+Roundify_3.Image = "rbxassetid://3570695787"
+Roundify_3.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Roundify_3.ScaleType = Enum.ScaleType.Slice
+Roundify_3.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_3.SliceScale = 0.040
+
+Game_5.Name = "Game"
+Game_5.Parent = LB2
+Game_5.Active = true
+Game_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Game_5.BackgroundTransparency = 1.000
+Game_5.Position = UDim2.new(1.27142859, 0, -0.0571428575, 0)
+Game_5.Size = UDim2.new(0, 84, 0, 22)
+Game_5.Font = Enum.Font.SourceSansBold
+Game_5.Text = "LUMBER TYCOON 2"
+Game_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Game_5.TextSize = 14.000
+
+LB2Button.Name = "LB2Button"
+LB2Button.Parent = LB2
+LB2Button.BackgroundColor3 = Color3.fromRGB(170, 255, 255)
+LB2Button.BackgroundTransparency = 1.000
+LB2Button.BorderColor3 = Color3.fromRGB(255, 170, 127)
+LB2Button.BorderSizePixel = 0
+LB2Button.Position = UDim2.new(1.15412688, 0, 0.633715391, 0)
+LB2Button.Size = UDim2.new(0, 234, 0, 23)
+LB2Button.ZIndex = 2
+LB2Button.Font = Enum.Font.SourceSansBold
+LB2Button.Text = "RUN SCRIPT!"
+LB2Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+LB2Button.TextSize = 14.000
+
+TextButton_Roundify_4px_11.Name = "TextButton_Roundify_4px"
+TextButton_Roundify_4px_11.Parent = LB2Button
+TextButton_Roundify_4px_11.Active = true
+TextButton_Roundify_4px_11.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_4px_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_4px_11.BackgroundTransparency = 1.000
+TextButton_Roundify_4px_11.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_4px_11.Selectable = true
+TextButton_Roundify_4px_11.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_4px_11.Image = "rbxassetid://3570695787"
+TextButton_Roundify_4px_11.ImageColor3 = Color3.fromRGB(247, 22, 56)
+TextButton_Roundify_4px_11.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_4px_11.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_4px_11.SliceScale = 0.040
+
+Icon_7.Name = "Icon"
+Icon_7.Parent = LB2Button
+Icon_7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Icon_7.BackgroundTransparency = 1.000
+Icon_7.Position = UDim2.new(0.894927561, 0, 0.0434782617, 0)
+Icon_7.Size = UDim2.new(0, 20, 0, 20)
+Icon_7.ZIndex = 2
+Icon_7.Image = "rbxassetid://3926305904"
+Icon_7.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Icon_7.ImageRectOffset = Vector2.new(84, 204)
+Icon_7.ImageRectSize = Vector2.new(36, 36)
+
+Game_6.Name = "Game"
+Game_6.Parent = LB2
+Game_6.Active = true
+Game_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Game_6.BackgroundTransparency = 1.000
+Game_6.Position = UDim2.new(1.62857151, 0, 0.257142872, 0)
+Game_6.Size = UDim2.new(0, 84, 0, 22)
+Game_6.Font = Enum.Font.SourceSansSemibold
+Game_6.Text = "SCRIPT :   Ancestor (Bark Lite)"
+Game_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Game_6.TextSize = 14.000
+
+-- Scripts:
 	local script = Instance.new('LocalScript', UronesMain)
 
 	local UIS = game:GetService("UserInputService")
@@ -1392,7 +1499,43 @@ Game_4.TextSize = 14.000
 	local FOVCount = script.Parent.UronesMain.PlayerFrame.SliderFOV.FOVCount
 	local TeleportBox = script.Parent.UronesMain.PlayerFrame.TeleportPlayer.TeleportBox
 	
-	--- Jailbreak RunScript ---
+	--- LB2 RunScript ---
+	local LB2 = script.Parent.UronesMain.ScriptFrame.LB2.LB2Button
+	local LB2_1 = script.Parent.UronesMain.ScriptFrame.LB2.LB2Button.TextButton_Roundify_4px
+	
+	local isHovering = false
+	
+	local tweenService = game:GetService("TweenService")
+	local tweenInfo = TweenInfo.new(0.2, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut)
+	
+	local colourDarkTween = tweenService:Create(LB2_1, tweenInfo, {ImageColor3 = Color3.fromRGB(247, 22, 56)})
+	local colourBrightTween = tweenService:Create(LB2_1, tweenInfo, {ImageColor3 = Color3.fromRGB(170, 14, 40)})
+	local colourDefaultTween = tweenService:Create(LB2_1, tweenInfo, {ImageColor3 = Color3.fromRGB(247, 22, 56)})
+	
+	LB2.MouseEnter:Connect(function()
+	
+		colourBrightTween:Play()
+	end)
+	
+	LB2.MouseLeave:Connect(function()
+	
+		colourDefaultTween:Play()
+	
+	end)
+	
+	LB2.MouseButton1Down:Connect(function()
+		LB2_1.ImageTransparency = 0.5
+		wait(0.01)
+		LB2_1.ImageTransparency = 0.3
+		wait(0.01)
+		LB2_1.ImageTransparency = 0
+	
+		loadstring(game:HttpGet("https://ancestordeveloment.wtf/Ancestor/",true))()
+	end)
+	
+	--- LB2 RunScript ---
+	
+	--- MM2 RunScript ---
 	local MM2 = script.Parent.UronesMain.ScriptFrame.MM2.MM2Button
 	local MM2_1 = script.Parent.UronesMain.ScriptFrame.MM2.MM2Button.TextButton_Roundify_4px
 	
@@ -1426,7 +1569,7 @@ Game_4.TextSize = 14.000
 		loadstring(game:HttpGet('http://alpha1004.tech/scripts/AlphaX.lua'))()
 	end)
 	
-	--- Jailbreak RunScript ---
+	--- MM2 RunScript ---
 	
 	--- Jailbreak RunScript ---
 	local Jailbreak = script.Parent.UronesMain.ScriptFrame.Jailbreak.JailbreakButton
