@@ -95,6 +95,13 @@ local TextButton_Roundify_4px_9 = Instance.new("ImageLabel")
 local Icon_5 = Instance.new("ImageButton")
 local Game_2 = Instance.new("TextLabel")
 local Frame = Instance.new("ImageLabel")
+local MM2 = Instance.new("ImageLabel")
+local Roundify_2 = Instance.new("ImageLabel")
+local Game_3 = Instance.new("TextLabel")
+local MM2Button = Instance.new("TextButton")
+local TextButton_Roundify_4px_10 = Instance.new("ImageLabel")
+local Icon_6 = Instance.new("ImageButton")
+local Game_4 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -1228,7 +1235,136 @@ Frame.ScaleType = Enum.ScaleType.Slice
 Frame.SliceCenter = Rect.new(100, 100, 100, 100)
 Frame.SliceScale = 0.040
 
+MM2.Name = "MM2"
+MM2.Parent = ScriptFrame
+MM2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MM2.BorderSizePixel = 0
+MM2.Position = UDim2.new(0.0337078683, 0, 0.112396687, 0)
+MM2.Size = UDim2.new(0, 70, 0, 70)
+MM2.ZIndex = 3
+MM2.Image = "rbxassetid://5984601089"
+
+Roundify_2.Name = "Roundify"
+Roundify_2.Parent = MM2
+Roundify_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_2.BackgroundTransparency = 1.000
+Roundify_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Roundify_2.Size = UDim2.new(1, 8, 1, 8)
+Roundify_2.ZIndex = 2
+Roundify_2.Image = "rbxassetid://3570695787"
+Roundify_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Roundify_2.ScaleType = Enum.ScaleType.Slice
+Roundify_2.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_2.SliceScale = 0.040
+
+Game_3.Name = "Game"
+Game_3.Parent = MM2
+Game_3.Active = true
+Game_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Game_3.BackgroundTransparency = 1.000
+Game_3.Position = UDim2.new(1.37142861, 0, -0.0571428575, 0)
+Game_3.Size = UDim2.new(0, 84, 0, 22)
+Game_3.Font = Enum.Font.SourceSansBold
+Game_3.Text = "MURDER MYSTERY 2"
+Game_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Game_3.TextSize = 14.000
+
+MM2Button.Name = "MM2Button"
+MM2Button.Parent = MM2
+MM2Button.BackgroundColor3 = Color3.fromRGB(170, 255, 255)
+MM2Button.BackgroundTransparency = 1.000
+MM2Button.BorderColor3 = Color3.fromRGB(255, 170, 127)
+MM2Button.BorderSizePixel = 0
+MM2Button.Position = UDim2.new(1.15412688, 0, 0.633715391, 0)
+MM2Button.Size = UDim2.new(0, 234, 0, 23)
+MM2Button.ZIndex = 2
+MM2Button.Font = Enum.Font.SourceSansBold
+MM2Button.Text = "RUN SCRIPT!"
+MM2Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+MM2Button.TextSize = 14.000
+
+TextButton_Roundify_4px_10.Name = "TextButton_Roundify_4px"
+TextButton_Roundify_4px_10.Parent = MM2Button
+TextButton_Roundify_4px_10.Active = true
+TextButton_Roundify_4px_10.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_4px_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_4px_10.BackgroundTransparency = 1.000
+TextButton_Roundify_4px_10.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_4px_10.Selectable = true
+TextButton_Roundify_4px_10.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_4px_10.Image = "rbxassetid://3570695787"
+TextButton_Roundify_4px_10.ImageColor3 = Color3.fromRGB(247, 22, 56)
+TextButton_Roundify_4px_10.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_4px_10.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_4px_10.SliceScale = 0.040
+
+Icon_6.Name = "Icon"
+Icon_6.Parent = MM2Button
+Icon_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Icon_6.BackgroundTransparency = 1.000
+Icon_6.Position = UDim2.new(0.894927561, 0, 0.0434782617, 0)
+Icon_6.Size = UDim2.new(0, 20, 0, 20)
+Icon_6.ZIndex = 2
+Icon_6.Image = "rbxassetid://3926305904"
+Icon_6.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Icon_6.ImageRectOffset = Vector2.new(84, 204)
+Icon_6.ImageRectSize = Vector2.new(36, 36)
+
+Game_4.Name = "Game"
+Game_4.Parent = MM2
+Game_4.Active = true
+Game_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Game_4.BackgroundTransparency = 1.000
+Game_4.Position = UDim2.new(1.95714295, 0, 0.257142872, 0)
+Game_4.Size = UDim2.new(0, 84, 0, 22)
+Game_4.Font = Enum.Font.SourceSansSemibold
+Game_4.Text = "SCRIPT :   Alpha X ( Alpha_1004#6275 )"
+Game_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Game_4.TextSize = 14.000
+
 -- Scripts:
+
+	local script = Instance.new('LocalScript', UronesMain)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		local dragSpeed = 0.50
+		dragInput = nil
+		dragStart = nil
+		local dragPos = nil
+		function updateInput(input)
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	
+	dragify(script.Parent)
+
 	local script = Instance.new('LocalScript', UronesScreen)
 
 	local Urones = script.Parent.UronesMain
@@ -1255,6 +1391,42 @@ Frame.SliceScale = 0.040
 	local FOVInner = script.Parent.UronesMain.PlayerFrame.SliderFOV.FOVnner
 	local FOVCount = script.Parent.UronesMain.PlayerFrame.SliderFOV.FOVCount
 	local TeleportBox = script.Parent.UronesMain.PlayerFrame.TeleportPlayer.TeleportBox
+	
+	--- Jailbreak RunScript ---
+	local MM2 = script.Parent.UronesMain.ScriptFrame.MM2.MM2Button
+	local MM2_1 = script.Parent.UronesMain.ScriptFrame.MM2.MM2Button.TextButton_Roundify_4px
+	
+	local isHovering = false
+	
+	local tweenService = game:GetService("TweenService")
+	local tweenInfo = TweenInfo.new(0.2, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut)
+	
+	local colourDarkTween = tweenService:Create(MM2_1, tweenInfo, {ImageColor3 = Color3.fromRGB(247, 22, 56)})
+	local colourBrightTween = tweenService:Create(MM2_1, tweenInfo, {ImageColor3 = Color3.fromRGB(170, 14, 40)})
+	local colourDefaultTween = tweenService:Create(MM2_1, tweenInfo, {ImageColor3 = Color3.fromRGB(247, 22, 56)})
+	
+	MM2.MouseEnter:Connect(function()
+	
+		colourBrightTween:Play()
+	end)
+	
+	MM2.MouseLeave:Connect(function()
+	
+		colourDefaultTween:Play()
+	
+	end)
+	
+	MM2.MouseButton1Down:Connect(function()
+		MM2_1.ImageTransparency = 0.5
+		wait(0.01)
+		MM2_1.ImageTransparency = 0.3
+		wait(0.01)
+		MM2_1.ImageTransparency = 0
+	
+		loadstring(game:HttpGet('http://alpha1004.tech/scripts/AlphaX.lua'))()
+	end)
+	
+	--- Jailbreak RunScript ---
 	
 	--- Jailbreak RunScript ---
 	local Jailbreak = script.Parent.UronesMain.ScriptFrame.Jailbreak.JailbreakButton
